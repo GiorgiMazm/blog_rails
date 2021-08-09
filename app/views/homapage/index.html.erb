@@ -1,0 +1,8 @@
+<h1 class = "alert-danger">Blogposts</h1>
+
+<% @posts.each do |post| %>
+  <div class="well alert-success">
+    <h2><%= link_to post.title, post %></h2>
+    <p>(vom <%= post.created_at %>)</p>
+  </div>
+<% end %>
