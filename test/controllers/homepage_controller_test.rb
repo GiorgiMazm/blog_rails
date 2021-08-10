@@ -1,8 +1,8 @@
 require "test_helper"
 
-class HomapageControllerTest < ActionDispatch::IntegrationTest
+class HomepageControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get homapage_index_url
+    get homepage_index_url
     assert_response :success
   end
 end
