@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2021_08_10_143327) do
     t.integer "duration"
     t.string "creator"
     t.string "writer"
-    t.integer "release"
+    t.date "release"
   end
 
   add_foreign_key "comments", "posts"
