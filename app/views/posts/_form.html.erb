@@ -17,11 +17,6 @@
   </div>
 
   <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
-  </div>
-
-  <div class="field">
     <%= form.label :series %>
     <%= form.text_field :series %>
   </div>
@@ -32,7 +27,7 @@
 </div>
 
   <div class="field">
-  <%= form.label :"duration(min) "%>
+  <%= form.label :"duration of 1 episode (min) "%>
 <%= form.text_field :duration %>
 </div>
 
@@ -44,6 +39,16 @@
 <div class="field">
 <%= form.label :"creator of anime"%>
 <%= form.text_field :creator %>
+</div>
+
+<div class="field">
+<%= form.label :"release date"%>
+<%= form.text_field :release %>
+</div>
+
+<div class="field">
+<%= form.label :body %>
+<%= form.text_area :body %>
 </div>
 
   <div class="actions">
