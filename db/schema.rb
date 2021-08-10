@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_10_140558) do
+ActiveRecord::Schema.define(version: 2021_08_10_142155) do
 
   create_table "comments", force: :cascade do |t|
     t.string "commenter"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2021_08_10_140558) do
     t.integer "season"
     t.integer "duration"
     t.string "creator"
+    t.string "writer"
   end
 
   add_foreign_key "comments", "posts"
