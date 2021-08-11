@@ -13,10 +13,10 @@
 
   <body>
     <p> 
-    Hallo, <%= signed_in? ? current_user.email: "anonym"%> 
+    <strong> Hallo, <%= signed_in? ? current_user.name: "anonym"%>  </strong>
 
     </p>
-
+  
     <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -30,6 +30,9 @@
         </ul>
        
         <ul class="nav navbar-nav navbar-right">
+          <li> 
+             <%= signed_in? ? link_to("Edit profile", edit_user_registration_path): nil %> 
+          </li>
           <li>
           <%= signed_in? ? 
           link_to( "Sign out", destroy_user_session_path, :method => :delete)

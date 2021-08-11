@@ -169,6 +169,8 @@ Devise.setup do |config|
   # Invalidates all the remember me tokens when the user signs out.
   config.expire_all_remember_me_on_sign_out = true
 
+  config.scoped_views = true
+
   # If true, extends the user's remember period when remembered via cookie.
   # config.extend_remember_period = false
 
