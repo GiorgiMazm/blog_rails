@@ -13,8 +13,8 @@
 
   <body>
     <p> 
-    Hallo,
-    <%= current_user.email %>
+    Hallo, <%= signed_in? ? current_user.email: "anonym"%> 
+
     </p>
 
     <nav class="navbar navbar-default">
@@ -30,7 +30,12 @@
         </ul>
        
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Sign out</a></li>
+          <li>
+          <%= signed_in? ? 
+          link_to( "Sign out", destroy_user_session_path, :method => :delete)
+            : link_to( "Sign in", user_session_path, :method => :create)
+          %> 
+          </li>
          
         </ul>
       </div><!-- /.navbar-collapse -->
