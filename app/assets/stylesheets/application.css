@@ -43,7 +43,7 @@
 }
 
 .homepage_posts_item{
-    display: block;
+    text-align: center;
     
 }
 
@@ -56,13 +56,4 @@
     
 }
 
-.post_title{
-    margin-top: 20px;
-    font-size: 20px;
-    display: inline-block;
-    color: green;
-}
-.post_title:hover{
-    color: blue;
-    font-size: 25px;
-}
+
