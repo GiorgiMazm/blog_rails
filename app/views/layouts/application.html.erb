@@ -42,8 +42,12 @@
         </ul>
        
         <ul class="nav navbar-nav navbar-right">
+         <li> 
+             <%= signed_in? ? link_to("All Users", users_index_path): nil %> 
+          </li>
+
           <li> 
-             <%= signed_in? ? link_to("Edit profile", edit_user_registration_path): nil %> 
+             <%= signed_in? ? link_to("Profile", edit_user_registration_path): nil %> 
           </li>
           <li>
           <%= signed_in? ? 

@@ -1,0 +1,7 @@
+<h1> List of all our Users:</h1>
+
+<p class="all-users">
+<% @users.each do |user| %>
+  <p class="all-users-item"> <%= user.name %> </p>
+<% end %>
+</p>
