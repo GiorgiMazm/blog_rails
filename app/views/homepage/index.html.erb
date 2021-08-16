@@ -1,8 +1,12 @@
-<h1 class = "alert-danger">Blogposts</h1>
+<h1 class = "">Blogposts</h1>
 
-<% @posts.each do |post| %>
-  <div class="well alert-success">
-    <h2><%= link_to post.title, post %></h2>
-    <p>(vom <%= post.created_at %>)</p>
-  </div>
+<div class = "test">
+  <% @posts.each do |post| %>
+    <div class="homepage_posts_wrapper">
+      <div class= "homepage_posts_item">
+        <p class="post_title"> <%= link_to post.title, post %> </p>
+        <p class= "post_date">(vom <%= post.created_at %>)</p>
+      </div>
+    </div>
 <% end %>
+</div>

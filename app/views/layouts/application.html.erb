@@ -12,8 +12,9 @@
   </head>
 
   <body>
-    <p> 
-    <strong> Hallo, <%= signed_in? ? current_user.name: "anonym"%>  </strong>
+    <p class = "greeting"> 
+    <strong> Welcome to our blog, <span class = "greeting_name"> <%= signed_in? ? current_user.name: "anonym"%> 
+    </span>  </strong>
 
     </p>
   
@@ -36,9 +37,7 @@
           <%= if (signed_in?)
             link_to("All Comments", comments_path) 
             end %>
-          </li>
-            
-            
+          </li>        
           
         </ul>
        
