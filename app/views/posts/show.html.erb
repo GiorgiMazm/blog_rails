@@ -46,6 +46,14 @@
   <%= @post.body %>
 </p>
 
+<p>
+  <% @post.images.each do |image| %>
+  
+  <%= image_tag(image) %>
+   <% end %>
+</p>
+
+
 <p>Kommentare:</p>
 <ul>
   <% @post.comments.each do |comment| %>

@@ -51,7 +51,13 @@
 <%= form.text_area :body %>
 </div>
 
+<div class="field">
+<%= form.label :Images %>
+<%= form.file_field :images, :multiple => true %>
+</div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+
