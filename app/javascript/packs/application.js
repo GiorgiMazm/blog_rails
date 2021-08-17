@@ -7,6 +7,15 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import * as StarRating from "star-rating.js"
+
+document.addEventListener("turbolinks:load", function() {
+    console.log("wurst")
+    var starRatingControl = new StarRating('.star-rating', {
+        maxStars: 5
+    }
+    )
+})
 
 Rails.start()
 Turbolinks.start()

@@ -2420,6 +2420,11 @@ detect-file@^1.0.0:
   resolved "https://registry.yarnpkg.com/detect-file/-/detect-file-1.0.0.tgz#f0d66d03672a825cb1b73bdb3fe62310c8e552b7"
   integrity sha1-8NZtA2cqglyxtzvbP+YjEMjlUrc=
 
+detect-it@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/detect-it/-/detect-it-4.0.1.tgz#3f8de6b8330f5086270571251bedf10aec049e18"
+  integrity sha512-dg5YBTJYvogK1+dA2mBUDKzOWfYZtHVba89SyZUhc4+e3i2tzgjANFg5lDRCd3UOtRcw00vUTMK8LELcMdicug==
+
 detect-node@^2.0.4:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.1.0.tgz#c9c70775a49c3d03bc2c06d9a73be550f978f8b1"
@@ -6139,6 +6144,13 @@ stable@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
   integrity sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==
+
+star-rating.js@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/star-rating.js/-/star-rating.js-4.1.4.tgz#0f2db3c4618bf80c9da6f166c51bd8fb61af2486"
+  integrity sha512-O1ZC8T/ni401EjT0XFf/qEZIMRCBsphPqMUxxaWiff2FsWdx3XZcz1KiGFTCuIS8FE16ofk7bS8uW55x0Aqf2g==
+  dependencies:
+    detect-it "^4.0.0"
 
 static-extend@^0.1.1:
   version "0.1.2"
