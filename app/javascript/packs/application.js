@@ -10,7 +10,7 @@ import "channels"
 import * as StarRating from "star-rating.js"
 
 document.addEventListener("turbolinks:load", function() {
-    console.log("wurst")
+    
     var starRatingControl = new StarRating('.star-rating', {
         maxStars: 5
     }

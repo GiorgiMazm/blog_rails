@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          authentication_keys: [:login]
   has_many :posts
+  has_many :ratings
 
   attr_writer :login
   def login
