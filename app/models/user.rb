@@ -6,6 +6,7 @@ class User < ApplicationRecord
          authentication_keys: [:login]
   has_many :posts
   has_many :ratings
+  validates :name, presence: true
 
   attr_writer :login
   def login
